@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597618089485",
+    "project_id": "chatapp-17a5a",
+    "storage_bucket": "chatapp-17a5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597618089485:android:e853c08d60f9f6f023bf44",
+        "android_client_info": {
+          "package_name": "com.example.massanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597618089485-bbgi3tgrt1hc5f5n2n2bn80l5o39fgst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxoroB_3RIvLjgfXtwiiLAYNwIs8aAnZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597618089485-bbgi3tgrt1hc5f5n2n2bn80l5o39fgst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

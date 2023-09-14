@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/user"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/v3"
+        android:paddingEnd="10dp"
+        android:backgroundTint="#EFEFEF">
+
+
+        <TextView
+            android:id="@+id/txtReceiverMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="15"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:text="Hello how are you?"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtReceiverMsg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-15dp"
+            android:text="14:07 PM"
+            android:textColor="#676767"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

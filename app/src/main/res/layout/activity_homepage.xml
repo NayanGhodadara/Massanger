@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activiry.Homepage">
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp">
+
+
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="ChatMe"
+            android:textColor="#707FFF"
+            android:textSize="22dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#F6F6F6">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/search"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/str1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" >
+                <ImageView
+                    android:id="@+id/statusAdd"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/add_nav"
+                    android:elevation="3dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="40dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:id="@+id/statusImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/scrollable"
+        android:layout_marginTop="5dp"
+        android:background="#E4E4E4" />
+
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNav"
+        android:layout_below="@+id/v1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/bottomNav"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/add" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/home_bottom"
+        app:menu="@menu/home_menu" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activiry.Register">
+
+  <TextView
+      android:id="@+id/head"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:text="Create Account"
+      android:textColor="#1C4B87"
+      android:textSize="25dp"
+      android:textStyle="bold" />
+
+
+  <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/img"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_below="@+id/head"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/user"
+      app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+  <TextView
+      android:id="@+id/head2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/img"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="5dp"
+      android:text="Profile picture"
+      android:textColor="#1C4B87" />
+
+
+  <EditText
+      android:id="@+id/editName"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_below="@+id/head2"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/radius1"
+      android:backgroundTint="#EDEDED"
+      android:hint="Name"
+      android:inputType="text"
+      android:paddingStart="20dp"
+      android:textColorHint="#858585" />
+
+  <EditText
+      android:id="@+id/editEmail"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_below="@+id/editName"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/radius1"
+      android:backgroundTint="#EDEDED"
+      android:hint="Email"
+      android:inputType="text"
+      android:paddingStart="20dp"
+      android:textColorHint="#858585" />
+
+
+  <EditText
+      android:id="@+id/editPass"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_below="@+id/editEmail"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/radius1"
+      android:backgroundTint="#EDEDED"
+      android:hint="Password"
+      android:textColorHint="#858585"
+      android:paddingStart="20dp"
+      android:inputType="textPassword"/>
+
+
+  <EditText
+      android:id="@+id/editConPass"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_below="@+id/editPass"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/radius1"
+      android:backgroundTint="#EDEDED"
+      android:hint="Password"
+      android:textColorHint="#858585"
+      android:paddingStart="20dp"
+      android:inputType="textPassword"/>
+
+
+  <Button
+      android:id="@+id/btnSignup"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_below="@+id/editConPass"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="#1C4B87"
+      android:hint="Sign Up"
+      android:textColorHint="@color/white" />
+
+</RelativeLayout>

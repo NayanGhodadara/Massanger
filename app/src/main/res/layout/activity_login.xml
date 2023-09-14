@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activiry.Login">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Welcome Back"
+        android:textColor="#1C4B87"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/radius1"
+        android:backgroundTint="#EDEDED"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColorHint="#858585" />
+
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/radius1"
+        android:backgroundTint="#EDEDED"
+        android:hint="Password"
+        android:textColorHint="#858585"
+        android:paddingStart="20dp"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1C4B87"
+        android:hint="Sign In"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Create new account"
+        android:textColor="#1C4B87"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
